@@ -19,6 +19,10 @@ module Fwcontent
       def copy_migrations
         migration_template "create_contents.rb", "db/migrate/create_contents.rb"
       end
+
+      def copy_initializer_file
+        copy_file "content.rb", "app/models/content.rb"
+      end
     end
   end
 end
