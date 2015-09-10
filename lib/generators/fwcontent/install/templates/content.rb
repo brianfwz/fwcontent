@@ -1,5 +1,4 @@
 class Content < ActiveRecord::Base
-	include Concerns::RailsAdmin::Content
 	extend Enumerize
 
 	validates :title, :description, presence: true
