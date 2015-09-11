@@ -22,7 +22,7 @@ module Fwcontent
 
       def copy_initializer_file
         copy_file "content.rb", "app/models/content.rb"
-        copy_file "content.rb", "app/views/_get_content_for.html.erb"
+        copy_file "_get_content_for.html.erb", "app/views/_get_content_for.html.erb"
       end
     end
   end
