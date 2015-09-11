@@ -22,7 +22,7 @@ Add this line to your layout to provide content to your position.
 ```ruby
 = render '/get_content_for'
 ```
-Add this line to place you want to put.
+Add this line to place you want to put content.
 
 ```ruby
 - if content_for? "your_position"
