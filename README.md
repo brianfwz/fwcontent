@@ -29,7 +29,7 @@ Add this line to place you want to put.
   = yield "your_position"
 ```
 
-Login admin to create and assign content to page position.
+Login admin to create and assign content to page's position.
 
 ## Contributing
 
