@@ -26,7 +26,7 @@ Add this line to place you want to put.
 
 ```ruby
 - if content_for? "your_position"
-        = yield "your_position"
+  = yield "your_position"
 ```
 
 Login admin to create and assign content to page position.
