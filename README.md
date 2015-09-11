@@ -3,7 +3,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fwcontent'
+gem 'fwcontent', :git => 'https://github.com/brianfwz/fwcontent.git'
 ```
 AND 
 
