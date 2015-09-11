@@ -17,7 +17,7 @@ And then execute:
 
 ## Usage
 
-Add this line to your layout to provide content to your position. 
+Add this line to your layout to provide content to positions. 
 
 ```ruby
 = render '/get_content_for'
@@ -29,7 +29,7 @@ Add this line to place you want to put content.
   = yield "your_position"
 ```
 
-Login admin to create and assign content to page's position.
+Login admin to create and assign content to positions on your page.
 
 ## Contributing
 
