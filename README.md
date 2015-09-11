@@ -5,18 +5,19 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'fwcontent'
 ```
+AND 
+
+```ruby
+gem 'enumerize'
+```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install fwcontent
-
 ## Usage
 
-TODO: Write usage instructions here
+
 
 
 ## Contributing
