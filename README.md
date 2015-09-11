@@ -17,7 +17,7 @@ And then execute:
 
 ## Usage
 
-Add this line to provide content to your position. 
+Add this line to your layout to provide content to your position. 
 
 ```ruby
 = render '/get_content_for'
