@@ -17,8 +17,16 @@ And then execute:
 
 ## Usage
 
+Add this line to provide content to your position. 
 
+```ruby
+= render '/get_content_for'
+```
 
+```ruby
+- if content_for? "your_position"
+        = yield "your_position"
+```
 
 ## Contributing
 
