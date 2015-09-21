@@ -17,6 +17,12 @@ And then execute:
 
 ## Usage
 
+And then execute:
+
+    $ rails g fwcontent:install
+
+    $ rake :db:migrate
+
 Add this line to your layout to provide content to positions. 
 
 ```ruby
