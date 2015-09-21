@@ -1,5 +1,5 @@
 require "fwcontent/version"
-require "fwcontent/enumerize"
+require "enumerize"
 
 module Fwcontent
   class Engine < ::Rails::Engine
