@@ -1,6 +1,6 @@
-class CreateContents < ActiveRecord::Migration
+class Create<%= table_name.camelize %> < ActiveRecord::Migration
   def self.up
-    create_table :contents do |t|
+    create_table :<%= table_name %> do |t|
       t.string   "title"
       t.text     "description"
       t.string   "position"  
@@ -10,6 +10,6 @@ class CreateContents < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :contents
+    drop_table :<%= table_name %>
   end
 end

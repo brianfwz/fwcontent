@@ -2,7 +2,7 @@ require 'rails/generators/migration'
 
 module Fwcontent
   module Generators
-    class InstallGenerator < ::Rails::Generators::Base
+    class InstallGenerator < ::Rails::Generators::NamedBase
       include Rails::Generators::Migration
       source_root File.expand_path('../templates', __FILE__)
       desc "add the migrations"
@@ -17,12 +17,13 @@ module Fwcontent
       end
 
       def copy_migrations
-        migration_template "create_contents.rb", "db/migrate/create_contents.rb"
+        migration_template "create_contents.rb", "db/migrate/create_#{file_name}s.rb"
       end
 
       def copy_initializer_file
-        copy_file "content.rb", "app/models/content.rb"
+        copy_file "content.rb", "app/models/#{file_name}.rb"
         copy_file "_get_content_for.html.erb", "app/views/_get_content_for.html.erb"
+        copy_file "content_helper.rb", "app/helpers/#{file_name}_helper.rb"
       end
     end
   end
