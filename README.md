@@ -14,7 +14,7 @@ And then execute:
 
 And then execute:
 
-    $ rails g fwcontent:install
+    $ rails g fwcontent:install your_model
 
     $ rake :db:migrate
 
