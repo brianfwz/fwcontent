@@ -21,9 +21,9 @@ module Fwcontent
       end
 
       def copy_initializer_file
-        migration_template "content.rb", "app/models/#{file_name}.rb"
+        template "content.rb", "app/models/#{file_name}.rb"
         copy_file "_get_content_for.html.erb", "app/views/_get_content_for.html.erb"
-        migration_template "content_helper.rb", "app/helpers/#{file_name}_helper.rb"
+        template "content_helper.rb", "app/helpers/#{file_name}_helper.rb"
       end
     end
   end
