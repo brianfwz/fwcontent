@@ -1,4 +1,4 @@
-class <%= file_name.camelize %> < ActiveRecord::Base
+class <%= @class_name %> < ActiveRecord::Base
 	extend Enumerize
 
 	validates :title, :description, presence: true

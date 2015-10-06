@@ -21,6 +21,7 @@ module Fwcontent
       end
 
       def copy_initializer_file
+        @class_name = class_name
         copy_file "content.rb", "app/models/#{file_name}.rb"
         copy_file "_get_content_for.html.erb", "app/views/_get_content_for.html.erb"
         copy_file "content_helper.rb", "app/helpers/#{file_name}_helper.rb"

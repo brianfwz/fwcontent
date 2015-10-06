@@ -1,5 +1,5 @@
-module <%= file_name.camelize %>Helper
+module <%= @class_name %>Helper
   def get_content_for
-    <%= file_name.camelize %>.where("page like ?", "%#{params[:controller]}:#{params[:action]}\n%")
+    <%= @class_name %>.where("page like ?", "%#{params[:controller]}:#{params[:action]}\n%")
   end
 end
