@@ -10,13 +10,11 @@ And then execute:
 
     $ bundle
 
-## Usage
-
-And then execute:
-
     $ rails g fwcontent:install your_model
 
     $ rake :db:migrate
+
+## Usage
 
 Add this line to your layout to provide content to positions. 
 
