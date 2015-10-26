@@ -12,7 +12,7 @@ And then execute:
 
     $ rails g fwcontent:install your_model
 
-    $ rake :db:migrate
+    $ rake db:migrate
 
 ## Usage
 
