@@ -30,6 +30,7 @@ module Fwcontent
 
         if active.include? "activeadmin"
           template "activeadmin/content.rb", "app/admin/#{file_name}.rb"
+          template "activeadmin/position.rb", "app/admin/position.rb"
         end
       end
     end
