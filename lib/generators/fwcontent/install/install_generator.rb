@@ -27,11 +27,6 @@ module Fwcontent
         template "position.rb", "app/models/position.rb"
         copy_file "_get_content_for.html.erb", "app/views/_get_content_for.html.erb"
         template "content_helper.rb", "app/helpers/#{file_name}_helper.rb"
-
-        if active.include? "activeadmin"
-          template "activeadmin/content.rb", "app/admin/#{file_name}.rb"
-          template "activeadmin/position.rb", "app/admin/position.rb"
-        end
       end
     end
   end
