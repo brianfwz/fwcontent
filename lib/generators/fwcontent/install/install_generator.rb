@@ -18,10 +18,12 @@ module Fwcontent
 
       def copy_migrations
         migration_template "create_contents.rb", "db/migrate/create_#{file_name}s.rb"
+        migration_template "create_positions.rb", "db/migrate/create_positions.rb"
       end
 
       def copy_initializer_file
         template "content.rb", "app/models/#{file_name}.rb"
+        template "position.rb", "app/models/position.rb"
         copy_file "_get_content_for.html.erb", "app/views/_get_content_for.html.erb"
         template "content_helper.rb", "app/helpers/#{file_name}_helper.rb"
       end
